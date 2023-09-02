@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('_head.html',{
-"title":"Podcast"
-})
+ <head>
+	<title>Podcast</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&display=swap" rel="stylesheet">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
 	<div class="wrapper">
-		@@include('_header.html',{})
+		<header class="header">
+	<div class="header__container _container">
+		<a href="" class="header__logo">
+			<img src="./img/logo.svg" alt="logo">
+		</a>
+		<nav class="header__menu menu-header menu__body">
+			<ul class="menu-header__list">
+				<li class="menu-header__item">
+					<a href="" class="menu-header__link">Episodes</a>
+				</li>
+				<li class="menu-header__item">
+					<a href="./about.html" class="menu-header__link">About</a>
+				</li>
+				<li data-spollers class="menu-header__item">
+					<a data-spoller href="#" class="menu-header__link menu-header__link_spoller">More</a>
+					<div class="menu-header__spoller-body">
+						<a href="" class="menu-header__link_more">Blog</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<div class="header__action">
+			<a data-da=".menu__body,479,0" href="" class="header__button button button_white button_header">RECENT EPISODES</a>
+			<button type="button" class="header__button button button_black button_header">SUBSCRIBE</button>
+		</div>
+		<div class="icon-menu">
+			<span></span><span></span><span></span>
+		</div>
+	</div>
+</header>
 		<main class="page">
 			<section class="main">
 				<div class="main__decore main__decor_01">
@@ -760,10 +799,120 @@
 				</div>
 			</section>
 		</main>
-		@@include('_footer.html',{})
+		<footer class="footer">
+	<div class="footer__container _container">
+		<div class="footer__up">
+			<div class="footer__column footer__column_mane column-mane">
+				<header class="column-mane__header">
+					<a href="" class="column-mane__logo">
+						<img src="./img/logo.svg" alt="logo">
+					</a>
+					<div class="column-mane__yers">©2021.</div>
+				</header>
+				<div class="column-mane__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+				<div class="column-mane__social">
+					<a href="" class="column-mane__icon">
+						<img src="./img/icons/social/twitter.svg" alt="footer icon">
+					</a>
+					<a href="" class="column-mane__icon">
+						<img src="./img/icons/social/instagram.svg" alt="footer icon">
+					</a>
+					<a href="" class="column-mane__icon">
+						<img src="./img/icons/social/tiktok.svg" alt="footer icon">
+					</a>
+				</div>
+			</div>
+			<nav class="footer__menu menu-footer footer__column_nav">
+				<ul class="menu-footer__list">
+					<li class="menu-footer__item">
+						<a href="#" class="menu-footer__link">About</a>
+					</li>
+					<li class="menu-footer__item">
+						<a href="#" class="menu-footer__link _red">Testimonials</a>
+					</li>
+					<li class="menu-footer__item">
+						<a href="#" class="menu-footer__link">Features</a>
+					</li>
+					<li class="menu-footer__item">
+						<a href="#" class="menu-footer__link _red">Episodes</a>
+					</li>
+					<li class="menu-footer__item">
+						<a href="#" class="menu-footer__link">Pricing</a>
+					</li>
+					<li class="menu-footer__item">
+						<a href="#" class="menu-footer__link">Blog</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer__column footer__column_links column-links">
+				<header data-spollers="479,max" class="column-links__header">
+					<div data-spoller class="column-links__text">Listen to episodes on your fav platform:</div>
+					<div class="spoller-body">
+						<div class="column-links__links">
+							<a href="" class="column-links__item">
+								<img src="./img/icons/platforms/google-podcast.svg" alt="social icon">
+							</a>
+							<a href="" class="column-links__item">
+								<img src="./img/icons/platforms/spotify.svg" alt="social icon">
+							</a>
+							<a href="" class="column-links__item">
+								<img src="./img/icons/platforms/youtube.svg" alt="social icon">
+							</a>
+						</div>
+					</div>
+				</header>
+				<footer data-spollers="479,max" class="column-links__footer">
+					<div data-spoller class="column-links__text">App available on:</div>
+					<div class="spoller-body">
+						<div class="column-links__links">
+							<a href="" class="column-links__item">
+								<img src="./img/icons/app/app_store.svg" alt="social icon">
+							</a>
+							<a href="" class="column-links__item">
+								<img src="./img/icons/app/google_play.svg" alt="social icon">
+							</a>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<div class="footer__down">
+			<div class="footer__right">©2022. All Rights Reserved. <span>Pod of Cast</span></div>
+			<div class="footer__buttons">
+				<a href="" class="footer__button">Privacy</a>
+				<a href="" class="footer__button">Terms</a>
+			</div>
+		</div>
 	</div>
-	@@include('_popup.html',{})
-	@@include('_js.html',{})
+</footer>
+	</div>
+	<div class="popup popup_popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_massagename-message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+
+	<!-- Swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
 </body>
 
 </html>
